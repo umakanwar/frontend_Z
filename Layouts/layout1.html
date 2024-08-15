@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+                height: 100vh;
+                background-color: rgb(143, 230, 230);
+                font-size: 30px;
+                text-align: center;
+            }
+            header{
+                height: 10%;
+                background-color: rgb(39, 220, 205);
+            }
+            .top{
+                height: 10%;
+                background-color: green;
+            }
+
+            main{
+                height: 70%;
+                background-color:  rgb(143, 230, 230);
+                display: flex;
+            }
+
+            footer{
+            height: 10%;
+            background-color: rgb(26, 78, 57);
+           }
+
+           .left{
+            width: 30%;
+            background-color:lightgreen;
+           }
+
+           .right{
+            width: 70%;
+            background-color: blueviolet;
+          
+            justify-content: center;
+            align-items: end;
+           }
+           .rightbox{
+            height: 50%;
+            width: 100%;
+            
+            border: 2px ;
+           }
+    
+    </style>
+</head>
+<body>
+  <div class="container">
+        <header style="color: aliceblue;border: 10px solid rgb(143, 230, 230); padding: 15px; ">Header</header>
+        <div class="top" style="color: aliceblue;border: 10px solid rgb(143, 230, 230); padding: 15px; ">Navigation</div>
+        <main>
+           
+            <div class="left" style="color: aliceblue;border: 10px solid rgb(143, 230, 230); padding: 200px; ">Aside</div>
+        <div class="right">
+            <div class="rightbox" style="color: aliceblue;border: 10px solid rgb(143, 230, 230); padding: 100px; background-color: rgb(5, 192, 255);">Content</div>
+            <div class="rightbox" style="color: aliceblue;border: 10px solid rgb(143, 230, 230); padding: 100px; background-color: darkblue; ">Section</div>
+        </div>
+        </main>
+        <footer style="color: aliceblue;border: 10px solid rgb(143, 230, 230); padding: 15px;">Footer</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100vh;
+            background-color: aliceblue;
+            text-align: center;
+            font-size: 30px;
+        }
+        header{
+            height: 10%;
+            background-color: rgb(1, 183, 255);
+            border: 10px solid rgb(127, 234, 255);
+            padding: 13px;
+            color: aliceblue;
+        }
+        main{
+            height: 80%;
+            background-color: blueviolet;
+            display: flex;
+        }
+        footer{
+            height: 10%;
+            background-color: rgb(1, 183, 255);
+            padding: 13px;
+            color: aliceblue;
+            border: 10px solid rgb(127, 234, 255);
+        }
+        .left{
+            width: 30%;
+            background-color: rgb(75, 202, 75);
+            border: 10px solid rgb(127, 234, 255);
+            padding: 300px;
+            color: aliceblue;
+        }
+       
+        .right2{
+            width: 80%;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            border: 10px solid rgb(127, 234, 255);
+        }
+        .rightbox{
+            height: 300px;
+            width: 34%;
+            background-color: rgb(251, 210, 5);
+            border: 2px solid black;
+            border: 15px solid orange;
+            text-align: center;
+            padding: 80px;
+           }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <main>
+         <div class="left">Aside</div>
+         <div class="right2">
+             <div class="rightbox" >Image</div>
+             <div class="rightbox">Image</div>
+             <div class="rightbox">Image</div>
+         </div>
+         </main>
+         <footer>Footer</footer>
+     </div>
+</body>
+</html>
