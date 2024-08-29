@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: flex;
+        }
+        .container1{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            animation-name: box1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+
+        }
+
+        .container2{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            animation-name: box2;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            position: absolute;
+            animation-direction: alternate;
+            right: 0px;
+        }
+
+        
+        @keyframes box1{
+            from{
+                width: 0px;
+                height: 0px;
+                background-color: red;
+                top: 0px;
+                left: 0px;
+                color: black;
+            }
+            to{
+                width: 200px;
+                height: 200px;
+                background-color: black;
+                top: 200px;
+                left: 700px;
+                color: white;
+            }
+        }
+
+        @keyframes box2{
+            from{
+                width: 0px;
+                height: 0px;
+                background-color: yellow;
+                top: 0px;
+                right: 0px;
+                color: black;
+            }
+            to{
+                width: 200px;
+                height: 200px;
+                background-color: orange;
+                top: 200px;
+                right: 700px;
+                color: white;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container1"> </div>
+    <div class="container2"></div>
+    <div class="container3"></div>
+    <div class="container4"></div>
+
+</body>
+</html>
