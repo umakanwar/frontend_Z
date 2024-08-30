@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        .uppercontainer{
+            height: 700px;
+            width: 700px;
+            background-color: hotpink;
+            border: 2px solid hotpink;
+            box-shadow: 0px 0px 50px pink;
+            padding: 50px;
+            border-radius: 400px;
+
+        }
+        .container{
+            height: 600px;
+            width: 600px;
+            background-color: yellow;
+            animation-name: box;
+        animation-duration: 1s;
+        animation-iteration-count: 0;
+        animation-timing-function: linear;
+            border-radius: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            box-shadow: 0px 0px 20px rgb(255, 204, 0);
+        }
+
+        @keyframes box {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+        .box{
+            height: 250px;
+            width: 250px;
+            background-color: red;
+            border-radius: 250px 0px 250px 0px;
+            position:absolute;
+            box-shadow: 0px 0px 20px red;
+        }
+
+        .colorbox{
+            height: 150px;
+            width: 150px;
+            background-color: orange;
+            border-radius: 120px 0px 120px 0px;
+            position: absolute;
+            box-shadow: 0px 0px 20px orange;
+        }
+
+        .newbox{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(163, 82, 239);
+            border-radius:80px 0px 80px 0px ;
+            position: absolute;
+            box-shadow: 0px 0px 20px rgb(163, 82, 239);
+        }
+
+        .extrabox{
+            height: 80px;
+            width: 80px;
+            background-color: green;
+            border-radius:70px 0px 70px 0px ;
+            position: absolute;
+            box-shadow: 0px 0px 10px green;
+        }
+
+        .centercircle{
+            height: 50px;
+            width: 50px;
+            /* border: 5px solid white; */
+            background-color: rgb(229, 10, 237);
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 0px 0px 15px white;
+        }
+        .box:nth-child(1){
+            left: 0px;
+            transform: rotate(45deg);
+        }
+        .box:nth-child(2){
+            top: 0px;
+            transform: rotate(-45deg);
+        }
+        .box:nth-child(3){
+            right: 0px;
+            transform: rotate(45deg);
+        }
+        .box:nth-child(4){
+            bottom: 0px;
+            transform: rotate(-45deg);
+        }
+        .colorbox:nth-child(5){
+            left: 100px;
+            transform: rotate(45deg);
+        }
+
+        .colorbox:nth-child(6){
+            right: 100px;
+            transform: rotate(45deg);
+        }
+
+        .colorbox:nth-child(7){
+            top: 100px;
+            transform: rotate(-45deg);
+        }
+
+        .colorbox:nth-child(8){
+            bottom: 100px;
+            transform: rotate(-45deg);
+        }
+
+        .newbox:nth-child(9){
+            left: 160px;
+            transform: rotate(45deg);
+        }
+        .newbox:nth-child(10){
+            top: 160px;
+            transform: rotate(-45deg);
+        }
+
+        .newbox:nth-child(11){
+            right: 160px;
+            transform: rotate(45deg);
+        }
+
+        .newbox:nth-child(12){
+            bottom: 160px;
+            transform: rotate(-45deg);
+        }
+/* 
+        .extrabox:nth-child(13){
+            top:50px;
+            left: 50px;
+            transform: rotate(-90deg);
+        } */
+        
+
+
+        /* .container:hover{
+            background-color: red;
+            width: 200px;
+            height: 400px; 
+        } */
+    </style>
+</head>
+<body>
+    <div class="uppercontainer">
+        <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="colorbox"></div>
+        <div class="colorbox"></div>
+        <div class="colorbox"></div>
+        <div class="colorbox"></div>
+        <div class="newbox"></div>
+        <div class="newbox"></div>
+        <div class="newbox"></div>
+        <div class="newbox"></div>
+        <div class="centercircle"></div>
+        <!-- <div class="extrabox"></div>
+        <div class="extrabox"></div>
+        <div class="extrabox"></div>
+        <div class="extrabox"></div> -->
+    </div></div>
+    
+</body>
+</html>
+
+
+      
